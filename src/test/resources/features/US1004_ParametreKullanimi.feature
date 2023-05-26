@@ -1,13 +1,13 @@
 Feature: 1004_Steplerde parametre kullanilabilmeli
 
-  Scenario: TC01 Amazon Nutella Testi
+  Scenario: TC08 Amazon Nutella Testi
 
     Given Kullanici amazon anasayfaya gider
     When Nutella icin arama yapar
     Then Arama sonuclarinin Nutella icerdigini test eder
     And Sayfayi kapatir
 
-  Scenario: TC02 Amazon Java Testi
+  Scenario: TC09 Amazon Java Testi
 
     Given Kullanici amazon anasayfaya gider
     When Java icin arama yapar
@@ -15,7 +15,7 @@ Feature: 1004_Steplerde parametre kullanilabilmeli
     And Sayfayi kapatir
 
 
-  Scenario: TC03 Amazon Samsung Testi
+  Scenario: TC010 Amazon Samsung Testi
 
     Given Kullanici amazon anasayfaya gider
     When Samsung icin arama yapar
