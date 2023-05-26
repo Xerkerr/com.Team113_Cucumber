@@ -33,4 +33,36 @@ public class AmazonStepDefinitions {
     }
 
 
+    @When("Java icin arama yapar")
+    public void javaIcinAramaYapar() {
+        amazonPage.aramaKutusu.sendKeys("Java" +Keys.ENTER);
+
+    }
+
+    @Then("Arama sonuclarinin Java icerdigini test eder")
+    public void aramaSonuclarininJavaIcerdiginiTestEder() {
+        String actualAramasonucu = amazonPage.aramaSonucuElementi.getText();
+        String expectedIcerik = "Java";
+        Assert.assertTrue(actualAramasonucu.contains(expectedIcerik));
+
+    }
+
+    @When("Samsung icin arama yapar")
+    public void samsungIcinAramaYapar() {
+        amazonPage.aramaKutusu.sendKeys("Samsung" +Keys.ENTER);
+    }
+
+    @Then("Arama sonuclarinin Samsung icerdigini test eder")
+    public void aramaSonuclarininSamsungIcerdiginiTestEder() {
+        String actualArama = amazonPage.aramaSonucuElementi.getText();
+        String expectedIcerik = "Samsung";
+        Assert.assertTrue(actualArama.contains(expectedIcerik));
+    }
+
+    @Then("Title'in Amazon icerdigini test eder")
+    public void titleInAmazonIcerdiginiTestEder() {
+        String actualTitle = Driver.getDriver().getTitle();
+        String expectedIcerik = "Amazon";
+        Assert.assertTrue(actualTitle.contains(expectedIcerik));
+    }
 }
