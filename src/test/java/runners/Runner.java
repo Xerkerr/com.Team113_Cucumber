@@ -50,6 +50,7 @@ public class Runner {
        dryRun : Bir feature dosyasini ilk defa yazdigimizda
                 step'lerden bazilari daha once var oldugundan BEYAZ
                 bazilari ise ilk defa kullanacagimiz icin SARI olur
+//////////deneme
 
                 Bu Feature dosyasini direk calistirmak istersek
                 Bastan baslayarak beyaz olan adimlari calistirir
