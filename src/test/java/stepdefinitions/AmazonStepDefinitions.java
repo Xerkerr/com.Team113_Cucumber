@@ -92,4 +92,8 @@ public class AmazonStepDefinitions {
         }
 
     }
+
+    @And("ilk urune click yapar")
+    public void ilkUruneClickYapar() {
+    }
 }
