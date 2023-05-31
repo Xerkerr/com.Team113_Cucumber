@@ -90,7 +90,7 @@ public class AmazonStepDefinitions {
         } catch (InterruptedException e) {
 
         }
-
+//d
     }
 
     @And("ilk urune click yapar")
